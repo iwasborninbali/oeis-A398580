@@ -53,3 +53,5 @@ cd programs && ./build.sh
 Aleksei Kudriashov (ORCID 0009-0006-8885-5338), Athanor lab, with AI assistance (OpenAI Codex cores; Claude Code as the
 lab's guide). Code: MIT; data and text: CC BY 4.0 (see `LICENSE.md`). The same computation is also part of the lab's
 broader archive [no3-results](https://github.com/iwasborninbali/no3-results).
+
+[Verification certificate](CERTIFICATE.md) and [prior-art record](PRIOR-ART.md).

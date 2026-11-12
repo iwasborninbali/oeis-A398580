@@ -1,0 +1,8 @@
+cwd: /Users/iwasborninbali/projects/science/oeis-A398580
+command: /tmp/c7-A398580/determinant_check 5 0 1 2
+exit: 0
+elapsed_seconds: 0.468
+
+START n=5 full determinant traversal, no symmetry
+{"n":5,"total":109536,"maximal":5646,"profile":[1,25,300,2148,9498,25052,36698,26700,8242,840,32],"maximal_profile":[0,0,0,0,0,0,152,1468,3474,520,32],"freedom_profile":[25,600,6444,37992,125260,220188,186900,65936,7560,320,0],"program":"det","split_rows":2,"shard":0,"shards":1,"frontiers":256,"assigned_frontiers":256,"cpu_seconds":0.004683,"seconds":0.001232,"visits":109536}
+DONE n=5 seconds=0.001234

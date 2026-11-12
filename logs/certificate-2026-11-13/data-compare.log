@@ -1,0 +1,24 @@
+cwd: /Users/iwasborninbali/projects/science/oeis-A398580
+command: python3 -B /tmp/c7_compare.py /Users/iwasborninbali/projects/science/oeis-A398580
+exit: 0
+elapsed_seconds: 0.038
+
+PASS: b-file cells 81..99 and 100..120 match n=9 independent reports and n=10 aggregated profile (40 cells)
+from pathlib import Path
+import sys,json,re
+r=Path(sys.argv[1]); s=r.name
+load=lambda p:json.loads((r/p).read_text())
+a=load('programs/reference/n9.json'); b=load('programs/reference/determinant-n9.json'); c=load('n10/profile-n10.json')
+assert a['profile']==b['profile'] and a['maximal_profile']==b['maximal_profile']
+if s=='oeis-A398580':
+ d={int(x.split()[0]):int(x.split()[1]) for x in (r/'b398580.txt').read_text().splitlines() if x and not x.startswith('#')}
+ assert [d[i] for i in range(81,100)]==a['profile']; assert [d[i] for i in range(100,121)]==c['profile']; print('PASS: b-file cells 81..99 and 100..120 match n=9 independent reports and n=10 aggregated profile (40 cells)')
+if s=='oeis-A398184':
+ txt=(r/'a398184.txt').read_text()
+ for n,profile in [(8,load('programs/reference/n8.json')['maximal_profile']),(9,a['maximal_profile']),(10,c['maximal_profile'])]:
+  line=next(x for x in txt.splitlines() if x.startswith(f'n = {n}:'))
+  m=re.search(r'sizes (\d+)\.\.(\d+) occur ([\d, ]+) times \(total (\d+)\)',line); assert m
+  lo,hi=int(m[1]),int(m[2]); vals=[int(v) for v in m[3].split(',')]; assert vals==profile[lo:hi+1]; assert sum(vals)==int(m[4])
+ print('PASS: maximal-profile file n=8,9,10 matches stored profiles; row totals agree')
+if s=='oeis-A398172':
+ d={int(x.split()[0]):int(x.split()[1]) for x in (r/'b398172.txt').read_text().splitlines() if x and not x.startswith('#')}; assert d[9]==a['total'] and d[10]==c['total']; print('PASS: b-file n=9,10 equals stored n=9 and n=10 totals')

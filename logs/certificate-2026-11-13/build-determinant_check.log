@@ -1,0 +1,5 @@
+cwd: /Users/iwasborninbali/projects/science/oeis-A398580
+command: cc -O2 -std=c11 /Users/iwasborninbali/projects/science/oeis-A398580/programs/determinant_check.c -o /tmp/c7-A398580/determinant_check
+exit: 0
+elapsed_seconds: 0.158
+

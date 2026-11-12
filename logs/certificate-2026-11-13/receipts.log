@@ -1,0 +1,27 @@
+cwd: /Users/iwasborninbali/projects/science/oeis-A398580
+command: python3 -I /Users/iwasborninbali/projects/science/oeis-A398580/programs/collect.py /tmp/c7-A398580/run-n10 --require-complete
+exit: 0
+elapsed_seconds: 0.275
+
+{
+  "n": 10,
+  "status": "exact (two programs agree)",
+  "programs": {
+    "row": {
+      "completed_shards": 512,
+      "complete": true,
+      "total": 7287023194031,
+      "maximal": 56412888628,
+      "cpu_seconds": 134324.474524,
+      "work": 546614238633
+    },
+    "det": {
+      "completed_shards": 512,
+      "complete": true,
+      "total": 7287023194031,
+      "maximal": 56412888628,
+      "cpu_seconds": 238723.803234,
+      "work": 7287023194031
+    }
+  }
+}
