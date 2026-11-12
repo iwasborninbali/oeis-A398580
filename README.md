@@ -1,5 +1,13 @@
 # OEIS A398580: triangle of k-element no-three-in-line subsets of the n X n grid
 
+<!-- oeis-status:begin -->
+**OEIS status** (lab registry, 13 Nov 2026):
+
+- [A398580](https://oeis.org/A398580), b-file rows n = 9, 10 (terms 1..120): **reviewed** (2026-11-13: reviewed (edit #41, Andrew Howroyd, no notes)). Certificate: complete.
+
+Rules and the full registry: [athanor-oeis](https://github.com/iwasborninbali/athanor-oeis/blob/main/REGISTRY.md).
+<!-- oeis-status:end -->
+
 [A398580](https://oeis.org/A398580): the triangle T(n,k), 0 <= k <= 2n, read by rows: the number of k-element subsets of the n X n grid with no three collinear points. Row sums are A398172.
 
 This repository holds the programs, data and checks behind the terms we contributed to this sequence. It concerns
