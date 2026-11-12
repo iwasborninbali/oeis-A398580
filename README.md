@@ -3,7 +3,7 @@
 <!-- oeis-status:begin -->
 **OEIS status** (lab registry, 13 Nov 2026):
 
-- [A398580](https://oeis.org/A398580), b-file rows n = 9, 10 (terms 1..120): **reviewed** (2026-11-13: reviewed (edit #41, Andrew Howroyd, no notes)). Certificate: complete.
+- [A398580](https://oeis.org/A398580), b-file rows n = 9, 10 (terms 1..120): **approved** (2026-11-13: approved (live revision #43)). Certificate: complete.
 
 Rules and the full registry: [athanor-oeis](https://github.com/iwasborninbali/athanor-oeis/blob/main/REGISTRY.md).
 <!-- oeis-status:end -->
