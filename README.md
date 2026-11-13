@@ -1,7 +1,7 @@
 # OEIS A398580: triangle of k-element no-three-in-line subsets of the n X n grid
 
 <!-- oeis-status:begin -->
-**OEIS status** (lab registry, 13 Nov 2026):
+**OEIS status** (lab registry, 14 Nov 2026):
 
 - [A398580](https://oeis.org/A398580), b-file rows n = 9, 10 (terms 1..120): **approved** (2026-11-13: approved (live revision #43)). Certificate: complete.
 
